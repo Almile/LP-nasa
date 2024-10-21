@@ -1,0 +1,185 @@
+body, html{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #101010;
+    --swiper-navigation-color: rgb(250, 255, 179);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction {
+    bottom: 20px;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.471) 0px -200px 60px -60px inset;
+}
+
+header {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.navbar {
+    padding: 1rem !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important; 
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(33, 37, 41, 0.435) !important;
+    
+}
+
+.btn-primary {
+    background-color: #ffff82de; 
+    border: none; 
+    color: #303030;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #ff9d00; 
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+}
+
+section .container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#servicos .card img{
+    margin-bottom: 2rem;
+}
+#servicos .card .card-text ,
+#servicos .card .card-title{
+    margin-bottom: 1rem;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 2rem auto 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+#contato form input, #contato form textarea {
+    margin-bottom: 15px;
+}
+
+
+footer {
+    position: relative;
+    background-color: #1c1c1c;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 15px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.1);
+}
+
+footer .social-icons img {
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
